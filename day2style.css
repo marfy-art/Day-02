@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: lato;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: black;
+    color: white;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    background: transparent;
+    transition: all ease .45s;
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+.logo span{
+    color: orange;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: orange;
+}
+.navbar a.active{
+    color: orange;
+}
+.menu-btn{
+    background: orange;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+}
+.menu-btn:hover{
+    background: transparent;
+    color: orange;
+    transition: all ease .50s;
+    border: 1px solid orange;
+}
+section{
+    padding: 0 15%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+.home-img{
+    width: 730px;
+    height: 730px;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.home-text span{
+    padding: 5px 25px;
+    background: rgb(65, 65, 65);
+    border-radius: 100px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.home-text h1{
+    font-size: 62px;
+    margin: 20px 0px;
+    font-weight: 900;
+}
+.home-text p{
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(214, 213, 213);
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 32px;
+    background: orange;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all ease .60s;
+
+}
+.btn:hover{
+    transform: translateY(-5px);
+    background: transparent;
+    color: white;
+}
+.two{
+    background: black;
+    color: orange;
+    margin-left: 25px;
+    border: 2px solid orange;
+}
+.two:hover{
+    background: white;
+    border: none;
+    color: black;
+}
+
+
+/* responsive design */
+
+@media (max-width: 1850px){
+    header{
+        padding: 15px 8%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 8%;
+        transition: .2s;
+
+    }
+}
+
+@media (max-width: 1370px){
+    header{
+        padding: 15px 4%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 4%;
+        transition: .2s;
+}
+h1{
+    font-size: 34px;
+}
+p{
+    font-size: 16px;
+}
+
+}
